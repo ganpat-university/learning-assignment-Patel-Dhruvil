@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6ab18a7c-70ae-476d-9e55-4362aa6381ed": {
+      "ProjectGuid": "6ab18a7c-70ae-476d-9e55-4362aa6381ed",
+      "DisplayName": "Assinment_1",
+      "ColorIndex": 0
+    },
+    "977a53f4-faee-4268-9aa5-1be1cf0b19a4": {
+      "ProjectGuid": "977a53f4-faee-4268-9aa5-1be1cf0b19a4",
+      "DisplayName": "Assinment_Geo_Symbol",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "78ee3725-a1df-45b1-8564-fb6dde695d6a": {
+      "ProjectGuid": "78ee3725-a1df-45b1-8564-fb6dde695d6a",
+      "DisplayName": "Asp_WebApp",
+      "ColorIndex": 2
+    },
+    "8f5feda7-6e1f-4932-9052-7635866850e1": {
+      "ProjectGuid": "8f5feda7-6e1f-4932-9052-7635866850e1",
+      "DisplayName": "demo23_WebApp",
+      "ColorIndex": 3
+    },
+    "d93a42a3-4e95-4719-a76f-e3506be864fb": {
+      "ProjectGuid": "d93a42a3-4e95-4719-a76f-e3506be864fb",
+      "DisplayName": "Demo23_ASP-WebApp",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

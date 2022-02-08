@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Assinment_Geo_Symbol/1.0.0": {
+        "runtime": {
+          "Assinment_Geo_Symbol.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assinment_Geo_Symbol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

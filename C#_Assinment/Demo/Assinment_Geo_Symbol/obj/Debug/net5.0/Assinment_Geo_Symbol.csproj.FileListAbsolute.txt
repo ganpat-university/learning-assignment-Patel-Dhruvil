@@ -1,0 +1,16 @@
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.exe
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.deps.json
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.runtimeconfig.json
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.runtimeconfig.dev.json
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.dll
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\ref\Assinment_Geo_Symbol.dll
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\bin\Debug\net5.0\Assinment_Geo_Symbol.pdb
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.csproj.AssemblyReference.cache
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.AssemblyInfoInputs.cache
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.AssemblyInfo.cs
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.csproj.CoreCompileInputs.cache
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.dll
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\ref\Assinment_Geo_Symbol.dll
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.pdb
+C:\Users\abc\source\repos\Demo\Assinment_Geo_Symbol\obj\Debug\net5.0\Assinment_Geo_Symbol.genruntimeconfig.cache
