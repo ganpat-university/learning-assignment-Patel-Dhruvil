@@ -10,22 +10,22 @@ using Demo23_WebApp.Models;
 
 namespace Demo23_WebApp.Controllers
 {
-    public class DepartmentsController : Controller
+    public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public DepartmentsController(ApplicationDbContext context)
+        public ProductsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Departments
+        // GET: Products
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Departments.ToListAsync());
+            return View(await _context.Products.ToListAsync());
         }
 
-        // GET: Departments/Details/5
+        // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,50 +33,48 @@ namespace Demo23_WebApp.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments
-                .FirstOrDefaultAsync(m => m.DepartmentId == id);
-            if (department == null)
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductId == id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(department);
+            return View(product);
         }
 
-        // GET: Departments/Create
+        // GET: Products/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Departments/Create
+        // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DepartmentId,DepartmentName")] Department department)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,Quntity,Price")] Product product)
         {
             if (ModelState.IsValid)
             {
-                bool found = _context.Departments
-                    .Any(d => d.DepartmentName == department.DepartmentName);
+                bool found = _context.Products
+                    .Any(p => p.ProductName == product.ProductName);
                 if (found)
                 {
-                    ModelState.AddModelError("DepartmentName","This department is already exists!");
+                    ModelState.AddModelError("ProductName", "This product is already exists!");
                 }
-
                 else
                 {
-                    _context.Add(department);
+                    _context.Add(product);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
-                
             }
-            return View(department);
+            return View(product);
         }
 
-        // GET: Departments/Edit/5
+        // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -84,22 +82,22 @@ namespace Demo23_WebApp.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments.FindAsync(id);
-            if (department == null)
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
             {
                 return NotFound();
             }
-            return View(department);
+            return View(product);
         }
 
-        // POST: Departments/Edit/5
+        // POST: Products/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("DepartmentId,DepartmentName")] Department department)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,Quntity,Price")] Product product)
         {
-            if (id != department.DepartmentId)
+            if (id != product.ProductId)
             {
                 return NotFound();
             }
@@ -108,12 +106,12 @@ namespace Demo23_WebApp.Controllers
             {
                 try
                 {
-                    _context.Update(department);
+                    _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DepartmentExists(department.DepartmentId))
+                    if (!ProductExists(product.ProductId))
                     {
                         return NotFound();
                     }
@@ -124,10 +122,10 @@ namespace Demo23_WebApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(department);
+            return View(product);
         }
 
-        // GET: Departments/Delete/5
+        // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -135,30 +133,30 @@ namespace Demo23_WebApp.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments
-                .FirstOrDefaultAsync(m => m.DepartmentId == id);
-            if (department == null)
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductId == id);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(department);
+            return View(product);
         }
 
-        // POST: Departments/Delete/5
+        // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var department = await _context.Departments.FindAsync(id);
-            _context.Departments.Remove(department);
+            var product = await _context.Products.FindAsync(id);
+            _context.Products.Remove(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DepartmentExists(int id)
+        private bool ProductExists(int id)
         {
-            return _context.Departments.Any(e => e.DepartmentId == id);
+            return _context.Products.Any(e => e.ProductId == id);
         }
     }
 }

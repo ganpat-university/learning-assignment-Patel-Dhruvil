@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
@@ -16,5 +17,9 @@ namespace Demo23_WebApp.Models
         [Required]
         [StringLength(50,ErrorMessage ="limit of characters is 50")]
         public string DepartmentName { get; set; }
+
+        #region
+        public ICollection<Subject> Subjects { get; set; }
+        #endregion
     }
 }

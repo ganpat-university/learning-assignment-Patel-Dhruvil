@@ -11,6 +11,9 @@ namespace Demo23_WebApp.Data
     {
         public DbSet<Department> Departments { get; set; }
 
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<Subject> Subjects { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
